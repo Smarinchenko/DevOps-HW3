@@ -8,4 +8,4 @@ namespace: hello-gitops
 images:
 - name: hello-gitops
   newName: serhiimarinchenko/hello-gitops
-  newTag: 439f716ec1a857cdbebaa7201773ca5b96dff9ba
+  newTag: 47c60428dc60456c662615e47310f27c5143e651
