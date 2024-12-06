@@ -165,7 +165,7 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git config pull.rebase false
+        git config pull.rebase true
         git commit -am "Bump docker tag"
         git pull origin
         
