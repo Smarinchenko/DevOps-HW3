@@ -101,6 +101,7 @@ jobs:
         
     - name: Commit files
       run: |
+        git remote remove origin
         git remote add origin https://github.com/Smarinchenko/DevOps-HW3
         git fetch origin master:tmp
         git rebase tmp
