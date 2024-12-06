@@ -101,13 +101,14 @@ jobs:
         
     - name: Commit files
       run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git commit -am "Bump docker tag"
+        git remote add origin https://github.com/Smarinchenko/DevOps-HW3
         git fetch origin master:tmp
         git rebase tmp
         git push origin HEAD:master
         git branch -D tmp
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git commit -am "Bump docker tag"
 
     - name: Push changes
       uses: ad-m/github-push-action@master
